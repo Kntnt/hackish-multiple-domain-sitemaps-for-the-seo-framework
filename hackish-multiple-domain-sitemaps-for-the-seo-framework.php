@@ -57,7 +57,7 @@ class Plugin {
 
     public function get_options( $settings, $setting ) {
         // This hackish plugin uses hooks in the transient API to alter
-        // sitemaps. Thus, the sitemap generation mist use  the transient API.
+        // sitemaps. Thus, the sitemap generation must use the transient API.
         $settings['cache_sitemap'] = true;
         return $settings;
     }
